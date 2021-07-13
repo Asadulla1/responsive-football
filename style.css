@@ -55,7 +55,8 @@ body {
   grid-column-gap: 20px;
   justify-content: center;
   align-items: center;
-  grid-row-gap: 0 0 180px 210px;
+  padding-left: 70px;
+  padding-right: 170px;
 }
 
 /* player style  */
@@ -88,6 +89,7 @@ body {
 }
 /* third section style  */
 .third-part {
+  height: 550px;
   margin-top: 100px;
   display: flex;
   justify-content: center;
@@ -120,6 +122,12 @@ body {
   background: #e02c6d;
   padding: 10px 24px;
   margin-left: 150px;
+}
+.last-half img {
+  width: 567px;
+  height: 427px;
+  margin-left: 69px;
+  margin-top: 10px;
 }
 /* footer-section style  */
 .footer-container {

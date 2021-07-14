@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,12 +20,17 @@ body {
   width: 50%;
   padding: 30px;
 }
+.image-transition:hover {
+  transform: rotate(360deg);
+  transition: 5s ease-in-out;
+}
 .half-width img {
   width: 556px;
   height: 438px;
   margin-left: 70px;
   margin-top: 40px;
 }
+
 .half-width h1 {
   text-align: start;
   color: white;
@@ -42,6 +48,10 @@ body {
   padding: 10px 24px;
   margin-left: 150px;
   margin-bottom: 27px;
+}
+.watch-button:hover {
+  transform: scale(1.25);
+  padding: 30px;
 }
 
 /* section 2 style start */
@@ -89,12 +99,15 @@ body {
 }
 /* third section style  */
 .third-part {
-  height: 550px;
   margin-top: 100px;
+
+  background-color: #ecf0f3;
+}
+.third-part-container {
   display: flex;
-  justify-content: center;
-  background-color: rgb(248, 248, 248);
+  justify-content: space-around;
   align-items: center;
+  margin-top: 20px;
 }
 
 .last-half h1 {
@@ -126,9 +139,152 @@ body {
 .last-half img {
   width: 567px;
   height: 427px;
-  margin-left: 69px;
-  margin-top: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
 }
+
+/* bonus-part-style  */
+.bonus-part-body {
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  background: #ecf0f3;
+  margin-top: 50px;
+}
+
+.width {
+  width: 50%;
+  padding: 30px;
+}
+.container-bonus-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* News-letter part  */
+.box {
+  width: 500px;
+  height: 500px;
+  padding: 50px 30px;
+  background-color: white;
+  box-shadow: 10px 10px 20px #cbcde1, -10px -10px 30px rgb(184, 183, 183);
+  border-radius: 20px;
+  text-align: center;
+}
+.box h2 {
+  margin-top: 20px;
+}
+.box p {
+  color: grey;
+  margin: 5px 5px;
+  margin-bottom: 20px;
+}
+.box img {
+  width: 300px;
+  height: 200px;
+}
+.btn {
+  position: relative;
+  margin: 30px 0 20px;
+}
+.email {
+  border: 0;
+  outline: none;
+  padding: 12px 15px;
+  width: 100%;
+  height: 42px;
+  border-radius: 50px;
+  box-shadow: inset 6px 10px 30px #cbcde1,
+    inset -6px -2px 3px rgb(211, 210, 210);
+}
+
+.subs-bttn {
+  background-color: rgb(104, 104, 104);
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  position: absolute;
+  padding: 12px 15px;
+  height: 42px;
+  top: 0;
+  right: 0;
+}
+.subs-bttn:hover {
+  background-color: green;
+  transition: 2s linear;
+}
+/* contact-card design  */
+
+.contact-photo img {
+  width: 100px;
+  height: 100px;
+  margin-left: 1px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+.contact-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px rgb(202, 202, 202),
+    -10px -10px 15px rgb(199, 199, 199);
+  margin: 30px 0 40px 85px;
+}
+.contact-card {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 350px;
+  height: 520px;
+  margin-left: 300px;
+  padding: 50px 30px;
+  background-color: white;
+  box-shadow: 10px 10px 20px #cbcde1, -10px -10px 30px rgb(184, 183, 183);
+  border-radius: 20px;
+  text-align: center;
+}
+.social-icon {
+  margin-top: 20px;
+
+  margin-left: 10px;
+}
+.fab {
+  color: indigo;
+  font-size: 26px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.contact-bttn a {
+  text-decoration: none;
+  color: #555;
+  margin-top: 50px;
+}
+.design {
+  box-shadow: 5px 5px 15px rgb(196, 194, 194), -5px -5px 15px rgb(196, 194, 194);
+  padding: 15px 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+.icon {
+  margin-top: 50px;
+}
+
+.far {
+  color: rgb(63, 63, 63);
+  padding-right: 25px;
+}
+.design:hover {
+  background-color: lawngreen;
+  transition: 2s linear;
+}
+/* contact card end  */
+
 /* footer-section style  */
 .footer-container {
   display: flex;
@@ -141,7 +297,7 @@ body {
   width: 483px;
   height: 110px;
 }
-.fab {
+.fotter-icon {
   font-size: 25px;
   color: grey;
   letter-spacing: 25px;

@@ -305,3 +305,27 @@ body {
 .copyright {
   margin-top: 20px;
 }
+
+/* Media Query  */
+@media only screen and (max-width: 688px) {
+  body {
+    overflow: hidden;
+  }
+  .top-banner {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .half-width img {
+    width: 344px;
+    height: 344px;
+  }
+  .middle,
+  .footer-container,
+  .third-part {
+    display: none;
+  }
+}
